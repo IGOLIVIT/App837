@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23B74" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="HerModel" representedClassName="HerModel" syncable="YES" codeGenerationType="class"/>
+    <entity name="MatchModel" representedClassName="MatchModel" syncable="YES" codeGenerationType="class">
+        <attribute name="mCat" optional="YES" attributeType="String"/>
+        <attribute name="mDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="mHero" optional="YES" attributeType="String"/>
+        <attribute name="mKDA1" optional="YES" attributeType="String"/>
+        <attribute name="mKDA2" optional="YES" attributeType="String"/>
+        <attribute name="mKDA3" optional="YES" attributeType="String"/>
+        <attribute name="mRes" optional="YES" attributeType="String"/>
+    </entity>
+</model>
