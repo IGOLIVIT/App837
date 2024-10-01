@@ -45,6 +45,7 @@ struct AddMatch: View {
                         })
                         
                         Spacer()
+
                     }
                 }
                 .padding(.bottom, 25)

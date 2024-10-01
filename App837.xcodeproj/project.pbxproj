@@ -38,6 +38,8 @@
 		78A13E922C847D3B00E7D8BC /* HerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A13E912C847D3B00E7D8BC /* HerDetail.swift */; };
 		78A13E952C85E1C400E7D8BC /* MatchDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A13E942C85E1C400E7D8BC /* MatchDetail.swift */; };
 		78A13F8D2C9B4B8F00E7D8BC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A13F8C2C9B4B8F00E7D8BC /* Launch Screen.storyboard */; };
+		78AE35CA2CAB1B6F00CE087E /* ComparisonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AE35C92CAB1B6F00CE087E /* ComparisonView.swift */; };
+		78AE35CD2CAB2D5B00CE087E /* StatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AE35CC2CAB2D5B00CE087E /* StatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,8 @@
 		78A13E912C847D3B00E7D8BC /* HerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerDetail.swift; sourceTree = "<group>"; };
 		78A13E942C85E1C400E7D8BC /* MatchDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetail.swift; sourceTree = "<group>"; };
 		78A13F8C2C9B4B8F00E7D8BC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		78AE35C92CAB1B6F00CE087E /* ComparisonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparisonView.swift; sourceTree = "<group>"; };
+		78AE35CC2CAB2D5B00CE087E /* StatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +249,8 @@
 		78A13E572C839C4700E7D8BC /* Match */ = {
 			isa = PBXGroup;
 			children = (
+				78AE35CB2CAB2D4600CE087E /* Stat */,
+				78AE35C82CAB1B5D00CE087E /* ComparisonView */,
 				78A13E932C85E1B500E7D8BC /* MatchDetail */,
 				78A13E8D2C8478C700E7D8BC /* HerForAdd */,
 				78A13E8A2C8471BA00E7D8BC /* AddMatch */,
@@ -300,6 +306,22 @@
 				78A13E942C85E1C400E7D8BC /* MatchDetail.swift */,
 			);
 			path = MatchDetail;
+			sourceTree = "<group>";
+		};
+		78AE35C82CAB1B5D00CE087E /* ComparisonView */ = {
+			isa = PBXGroup;
+			children = (
+				78AE35C92CAB1B6F00CE087E /* ComparisonView.swift */,
+			);
+			path = ComparisonView;
+			sourceTree = "<group>";
+		};
+		78AE35CB2CAB2D4600CE087E /* Stat */ = {
+			isa = PBXGroup;
+			children = (
+				78AE35CC2CAB2D5B00CE087E /* StatView.swift */,
+			);
+			path = Stat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,6 +407,7 @@
 				78A13E672C839C8400E7D8BC /* MatchViewModel.swift in Sources */,
 				78A13E892C846E5F00E7D8BC /* AddHeroes.swift in Sources */,
 				78A13E6B2C839C9700E7D8BC /* LoadingView.swift in Sources */,
+				78AE35CD2CAB2D5B00CE087E /* StatView.swift in Sources */,
 				78A13E8C2C8471C200E7D8BC /* AddMatch.swift in Sources */,
 				78A13E632C839C7700E7D8BC /* HeroesViewModel.swift in Sources */,
 				78A13E7B2C839CCC00E7D8BC /* CoreDataStack.swift in Sources */,
@@ -397,6 +420,7 @@
 				78A13E5B2C839C5700E7D8BC /* ProfileViewModel.swift in Sources */,
 				78A13E8F2C8478D800E7D8BC /* HerForAdd.swift in Sources */,
 				78A13E752C839CB900E7D8BC /* Reviews.swift in Sources */,
+				78AE35CA2CAB1B6F00CE087E /* ComparisonView.swift in Sources */,
 				78A13E3D2C839B9900E7D8BC /* App837App.swift in Sources */,
 				78A13E772C839CBE00E7D8BC /* Not.swift in Sources */,
 				78A13E5F2C839C6700E7D8BC /* StatistisViewModel.swift in Sources */,

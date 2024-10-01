@@ -77,6 +77,8 @@ struct MatchDetail: View {
                                         Spacer()
                                         
                                         Text(viewModel.selectedMatch?.mHero ?? "")
+                                            .foregroundColor(.white)
+                                            .font(.system(size: 18, weight: .medium))
                                             .padding(8)
                                     }
                                 )

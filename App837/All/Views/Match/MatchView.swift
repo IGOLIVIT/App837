@@ -20,10 +20,55 @@ struct MatchView: View {
             
             VStack {
                 
-                Text("Match")
-                    .foregroundColor(.white)
-                    .font(.system(size: 26, weight: .bold))
-                    .padding(.bottom, 25)
+                ZStack {
+                    
+                    Text("Match")
+                        .foregroundColor(.white)
+                        .font(.system(size: 26, weight: .bold))
+                        .padding(.bottom, 25)
+                    
+                    HStack {
+                        
+                        Spacer()
+                        
+                        if viewModel.games < 2 {
+                            
+                            Button(action: {
+                                
+                                withAnimation(.spring()) {
+                                    
+                                    viewModel.isMatchesEmpty = true
+                                    
+                                }
+                                
+                            }, label: {
+                                
+                                Image(systemName: "arrow.left.arrow.right.square.fill")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 18, weight: .medium))
+                                
+                            })
+                            
+                        } else {
+                            
+                            Button(action: {
+                                
+                                withAnimation(.spring()) {
+                                    
+                                    viewModel.isComprasion = true
+                                }
+                                
+                            }, label: {
+                                
+                                Image(systemName: "arrow.left.arrow.right.square.fill")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 18, weight: .medium))
+                                
+                            })
+                            
+                        }
+                    }
+                }
                 
                 HStack {
                     
@@ -192,6 +237,100 @@ struct MatchView: View {
         .sheet(isPresented: $viewModel.isDetail, content: {
             
             MatchDetail(viewModel: viewModel)
+        })
+        .overlay(
+            
+            ZStack {
+                
+                Color.black.opacity(viewModel.isMatchesEmpty ? 0.5 : 0)
+                    .ignoresSafeArea()
+                    .onTapGesture {
+                        
+                        withAnimation(.spring()) {
+                            
+                            viewModel.isMatchesEmpty = false
+                        }
+                    }
+                
+                VStack {
+                    
+                    HStack {
+                        
+                        Spacer()
+                        
+                        Button(action: {
+                            
+                            withAnimation(.spring()) {
+                                
+                                viewModel.isMatchesEmpty = false
+                            }
+                            
+                        }, label: {
+                            
+                            Image(systemName: "xmark")
+                                .foregroundColor(.white)
+                                .font(.system(size: 15, weight: .regular))
+                        })
+                    }
+                    
+                    Text("Delete")
+                        .foregroundColor(.black)
+                        .font(.system(size: 20, weight: .semibold))
+                        .padding()
+                    
+                    Text("Are you sure you want to delete?")
+                        .foregroundColor(.gray)
+                        .font(.system(size: 14, weight: .regular))
+                        .multilineTextAlignment(.center)
+                    
+                    HStack {
+                        
+                        Button(action: {
+                            
+                            withAnimation(.spring()) {
+                                
+                                viewModel.isMatchesEmpty = false
+                                
+                            }
+                            
+                        }, label: {
+                            
+                            Text("Delete")
+                                .foregroundColor(.red)
+                                .font(.system(size: 18, weight: .semibold))
+                                .frame(maxWidth: .infinity)
+                                .frame(height: 40)
+                            
+                        })
+                        
+                        Button(action: {
+                            
+                            withAnimation(.spring()) {
+                                
+                                viewModel.isMatchesEmpty = false
+                            }
+                            
+                        }, label: {
+                            
+                            Text("Close")
+                                .foregroundColor(.black)
+                                .font(.system(size: 18, weight: .regular))
+                                .frame(maxWidth: .infinity)
+                                .frame(height: 40)
+                            
+                        })
+                    }
+                }
+                .frame(maxWidth: .infinity)
+                .padding()
+                .background(RoundedRectangle(cornerRadius: 20).fill(Color("bg2")))
+                .padding()
+                .offset(y: viewModel.isMatchesEmpty ? 0 : UIScreen.main.bounds.height)
+            }
+        )
+        .sheet(isPresented: $viewModel.isComprasion, content: {
+            
+            ComparisonView(viewModel: viewModel)
         })
     }
 }

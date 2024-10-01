@@ -10,12 +10,19 @@ import CoreData
 
 final class MatchViewModel: ObservableObject {
     
+
+    
+    @Published var selectedMatch: MatchModel?
+    @Published var selectedMatch2: MatchModel?
+    
     @Published var po1: String = String(format: "%.f", Double(.random(in: 1...9)))
     @Published var po2: String = String(format: "%.f", Double(.random(in: 1...9)))
     @Published var po3: String = String(format: "%.f", Double(.random(in: 1...9)))
     @Published var po4: String = String(format: "%.f", Double(.random(in: 1...9)))
     @Published var po5: String = String(format: "%.f", Double(.random(in: 1...9)))
 
+    @AppStorage("matchAmount") var matchAmount: Int = 0
+    @AppStorage("statForOpen2") var statForOpen2: Int = 0
     
     @AppStorage("kda1") var kda1: Int = 0
     @AppStorage("kda2") var kda2: Int = 0
@@ -41,6 +48,9 @@ final class MatchViewModel: ObservableObject {
     @Published var isAdd: Bool = false
     @Published var isDetail: Bool = false
     @Published var isDelete: Bool = false
+    @Published var isMatchesEmpty: Bool = false
+    @Published var isComprasion: Bool = false
+    @Published var isStat: Bool = false
     
     @Published var mCat: String = ""
     @Published var mDate: Date = Date()
@@ -51,7 +61,6 @@ final class MatchViewModel: ObservableObject {
     @Published var mHero: String = ""
 
     @Published var matches: [MatchModel] = []
-    @Published var selectedMatch: MatchModel?
 
     func addMatch() {
 
