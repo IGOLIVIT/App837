@@ -51,6 +51,7 @@ final class MatchViewModel: ObservableObject {
     @Published var isMatchesEmpty: Bool = false
     @Published var isComprasion: Bool = false
     @Published var isStat: Bool = false
+    @Published var isPlusHero: Bool = false
     
     @Published var mCat: String = ""
     @Published var mDate: Date = Date()

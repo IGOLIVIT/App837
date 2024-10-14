@@ -259,8 +259,8 @@ struct AddMatch: View {
                         .frame(height: 50)
                         .background(RoundedRectangle(cornerRadius: 7).fill(Color("prim")))
                 })
-                .opacity(viewModel.currentCat.isEmpty || viewModel.currentRes.isEmpty || viewModel.mKDA1.isEmpty || viewModel.mKDA2.isEmpty || viewModel.mKDA3.isEmpty || viewModel.currentHerForAdd.isEmpty ? 0.5 : 1)
-                .disabled(viewModel.currentCat.isEmpty || viewModel.currentRes.isEmpty || viewModel.mKDA1.isEmpty || viewModel.mKDA2.isEmpty || viewModel.mKDA3.isEmpty || viewModel.currentHerForAdd.isEmpty ? true : false)
+                .opacity(viewModel.currentCat.isEmpty || viewModel.currentRes.isEmpty || viewModel.mKDA1.isEmpty || viewModel.mKDA2.isEmpty || viewModel.mKDA3.isEmpty ? 0.5 : 1)
+                .disabled(viewModel.currentCat.isEmpty || viewModel.currentRes.isEmpty || viewModel.mKDA1.isEmpty || viewModel.mKDA2.isEmpty || viewModel.mKDA3.isEmpty ? true : false)
             }
             .padding()
         }

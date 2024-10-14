@@ -10,6 +10,7 @@ import SwiftUI
 struct AddHeroes: View {
     
     @StateObject var viewModel: HeroesViewModel
+    @Environment(\.presentationMode) var router
     
     var body: some View {
         
@@ -58,6 +59,7 @@ struct AddHeroes: View {
                 Button(action: {
                     
                     viewModel.curHer.append(viewModel.currentHerPhoto)
+                    router.wrappedValue.dismiss()
                     
                     withAnimation(.spring()) {
                         
