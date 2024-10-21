@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7809B94C2CC696EE00D089BF /* Wty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7809B94B2CC696EE00D089BF /* Wty.swift */; };
+		7809B94E2CC696F700D089BF /* Samplec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7809B94D2CC696F700D089BF /* Samplec.swift */; };
+		7809B9502CC6970100D089BF /* Dgiom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7809B94F2CC6970100D089BF /* Dgiom.swift */; };
 		78A13E3D2C839B9900E7D8BC /* App837App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A13E3C2C839B9900E7D8BC /* App837App.swift */; };
 		78A13E3F2C839B9900E7D8BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A13E3E2C839B9900E7D8BC /* ContentView.swift */; };
 		78A13E412C839B9A00E7D8BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78A13E402C839B9A00E7D8BC /* Assets.xcassets */; };
@@ -43,6 +46,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7809B94B2CC696EE00D089BF /* Wty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wty.swift; sourceTree = "<group>"; };
+		7809B94D2CC696F700D089BF /* Samplec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Samplec.swift; sourceTree = "<group>"; };
+		7809B94F2CC6970100D089BF /* Dgiom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dgiom.swift; sourceTree = "<group>"; };
 		78A13E392C839B9900E7D8BC /* App837.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App837.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A13E3C2C839B9900E7D8BC /* App837App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App837App.swift; sourceTree = "<group>"; };
 		78A13E3E2C839B9900E7D8BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -165,6 +171,9 @@
 				78A13E7C2C839CD300E7D8BC /* Array.swift */,
 				78A13E7E2C839CDA00E7D8BC /* DateConvert.swift */,
 				78A13E802C839CE300E7D8BC /* CoreModel.xcdatamodeld */,
+				7809B94B2CC696EE00D089BF /* Wty.swift */,
+				7809B94D2CC696F700D089BF /* Samplec.swift */,
+				7809B94F2CC6970100D089BF /* Dgiom.swift */,
 			);
 			path = Extesions;
 			sourceTree = "<group>";
@@ -398,6 +407,7 @@
 				78A13E952C85E1C400E7D8BC /* MatchDetail.swift in Sources */,
 				78A13E862C83AC2300E7D8BC /* AddProfile.swift in Sources */,
 				78A13E3F2C839B9900E7D8BC /* ContentView.swift in Sources */,
+				7809B9502CC6970100D089BF /* Dgiom.swift in Sources */,
 				78A13E7D2C839CD300E7D8BC /* Array.swift in Sources */,
 				78A13E822C839CE300E7D8BC /* CoreModel.xcdatamodeld in Sources */,
 				78A13E5D2C839C5E00E7D8BC /* StatisticView.swift in Sources */,
@@ -408,7 +418,9 @@
 				78A13E892C846E5F00E7D8BC /* AddHeroes.swift in Sources */,
 				78A13E6B2C839C9700E7D8BC /* LoadingView.swift in Sources */,
 				78AE35CD2CAB2D5B00CE087E /* StatView.swift in Sources */,
+				7809B94E2CC696F700D089BF /* Samplec.swift in Sources */,
 				78A13E8C2C8471C200E7D8BC /* AddMatch.swift in Sources */,
+				7809B94C2CC696EE00D089BF /* Wty.swift in Sources */,
 				78A13E632C839C7700E7D8BC /* HeroesViewModel.swift in Sources */,
 				78A13E7B2C839CCC00E7D8BC /* CoreDataStack.swift in Sources */,
 				78A13E732C839CB300E7D8BC /* U1.swift in Sources */,
@@ -556,7 +568,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"App837/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Stak Legek";
+				INFOPLIST_KEY_CFBundleDisplayName = "Mel-Game";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -572,7 +584,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = IOI.App837;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -595,7 +607,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"App837/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Stak Legek";
+				INFOPLIST_KEY_CFBundleDisplayName = "Mel-Game";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -611,7 +623,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = IOI.App837;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
